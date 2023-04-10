@@ -78,8 +78,6 @@
 
   .addres .link {
     display: block;
-    padding-top: 6px;
-    padding-bottom: 6px;
 
     color: var(--text);
     font-weight: 400;
@@ -90,6 +88,10 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .addres-items .item:not(:last-child) {
+    margin-bottom: 12px;
   }
 
   .menu-open-btn {
@@ -276,6 +278,7 @@
 
   .addres-items .item:not(:last-child) {
     margin-right: 40px;
+    margin-bottom: 0;
   }
 
   .addres .link {
@@ -320,6 +323,7 @@
   }
 
   /* ------Features--------- */
+
   .features-item-icon {
     display: flex;
     align-items: center;
@@ -344,7 +348,7 @@
     padding-bottom: 120px;
   }
 
-  .features-items .item {
+  .features .features-items .item {
     flex-basis: calc((100% - 72px) / 4);
     margin-bottom: 0;
   }
@@ -359,6 +363,15 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+  }
+
+  .features .title,
+  .portfolio .title {
+    text-align: start;
+  }
+
+  .features-items .text {
+    font-weight: 400;
   }
 
   /* -------------Services-------------- */

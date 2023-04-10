@@ -133,6 +133,10 @@ img {
   top: 0;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
   z-index: 1;
   padding: 24px 24px 40px 40px;
 
@@ -163,13 +167,6 @@ img {
   fill: var(--dark);
 }
 
-.menu-wrap {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: auto;
-}
 .mob-menu-navigation .link {
   font-weight: 700;
   font-size: 36px;
@@ -179,26 +176,25 @@ img {
 
   color: #2e2f42;
 }
-.mob-menu-navigation {
-  margin-bottom: auto;
-}
 
-.mob-menu-navigation .item {
+.mob-menu-navigation .item:not(:last-child) {
   margin-bottom: 40px;
 }
+
 .mob-menu-navigation .current-page {
   color: var(--pressed-state);
 }
-.mob-menu-addres {
-}
+
 .mob-menu-addres .addres-items .item:not(:last-child) {
   margin-bottom: 40px;
 }
 
-.mob-menu-addres .addres-items .item:last-child {
+.mob-menu-addres .addres-items {
   margin-bottom: 48px;
 }
 .mob-menu-mail {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -207,6 +203,8 @@ img {
   color: #434455;
 }
 .mob-menu-tel {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.11;
@@ -219,7 +217,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 40px;
+  max-width: 328px;
 }
 
 .mob-menu-soc .item {
@@ -699,7 +697,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--text);
+  background-color: var(--primary-brand);
 
   transition-property: background-color;
   transition-duration: 250ms;
@@ -860,6 +858,7 @@ img {
 .modal-form {
   width: 100%;
   line-height: 1.17;
+  overflow: auto;
 }
 
 .label-modal {
