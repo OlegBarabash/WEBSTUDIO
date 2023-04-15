@@ -251,6 +251,7 @@
   }
 
   .button-style {
+    justify-content: center;
     gap: 0;
   }
 
@@ -468,7 +469,6 @@
 
   .button-style {
     margin-bottom: 72px;
-    justify-content: center;
   }
 
   .button-style > .item {
