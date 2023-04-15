@@ -568,9 +568,12 @@ img {
 
 .portfolio-items .item {
   display: flex;
-  margin-bottom: 48px;
   max-width: 396px;
   max-height: 400px;
+}
+
+.portfolio-items .item:not(:last-child) {
+  margin-bottom: 48px;
 }
 
 .card-description {
